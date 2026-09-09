@@ -6,6 +6,8 @@ import ProductReviewCard from "./ProductReviewCard";
 import { Box, Grid } from "@mui/joy";
 import { Center } from "@mantine/core";
 import LinearProgress from "@mui/material/LinearProgress";
+import {mens_kurta} from "../../../Data/Mens_Kurta.js"
+import HomeSectionCard from "../HomeSectionCard/HomeSectionCard.jsx";
 
 const product = {
   name: "Basic Tee 6-Pack",
@@ -359,6 +361,24 @@ const ProductDetails = () => {
             </Grid>
           </div>
         </section>
+
+           {/* similar products  */}
+
+           <section className="pt-10">
+
+            <h1 className="py-5 text-xl font-bold" >Similar Product</h1>
+            <div className=" flex flex-wrap space-y-5">
+                    {mens_kurta.map((item) => <HomeSectionCard {...item}/> )}
+
+            </div>
+
+
+           </section>
+
+        
+
+
+
       </div>
     </div>
   );
