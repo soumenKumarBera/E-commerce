@@ -9,6 +9,7 @@ import "@mantine/carousel/styles.css";
 import HomePage from "./customer/pageas/HomePage/HomePage";
 import Footer from "./customer/componets/Footer/Footer";
 import Product from "./customer/componets/Product/Product.jsx";
+import ProductDetails from "./customer/componets/ProductDetailas/ProductDetails.jsx";
 
 
 const App =() => {
@@ -17,7 +18,8 @@ const App =() => {
     <Navigations />
       <div>
         {/* <HomePage /> */}
-        <Product />
+        {/* <Product /> */}
+        <ProductDetails />
       </div>
 
       <Footer />
